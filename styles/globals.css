@@ -154,7 +154,7 @@
 }
 
 .flex-center {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center gap-2;
 }
 
 .flex-start {
@@ -166,5 +166,22 @@
 }
 
 .flex-between {
-  @apply flex justify-between items-center;
+  @apply flex justify-between items-center mt-2;
+}
+.post{
+  display: none;
+ @media screen and (min-width: 640px) {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+ }
+}
+.post_mobile{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (min-width: 640px){
+    display: none;
+  }
 }
